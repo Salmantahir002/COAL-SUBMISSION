@@ -1,0 +1,3 @@
+		MOV		R0, #10      ; Load the number 10 into R0
+		STR		R0, [SP, #0] ; Store the value of R0 into memory at SP (stack pointer at 0)
+		LDR		R1, [SP, #0] ; Load the value back from memory into R1
