@@ -1,0 +1,4 @@
+    MOV R0, #10  ; Load 10 into R0
+    MOV R1, #20  ; Load 20 into R1
+    ADD R2, R0, R1 ; R2 = R0 + R1
+    SUB R3, R1, R0 ; R3 = R1 - R0
