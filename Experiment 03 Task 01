@@ -1,0 +1,7 @@
+start  mov     R1,#20   // move value in register 1 and store 
+       mov     R2,#5  // move value in register 2 and store 
+       CMP     R2 ,R1   //comapre two value r2 greater than r1
+       BGT     label   // if r2 greater than r1 then add otherwise move on label
+       ADD     R1,R1,R2
+label  
+       sub     R4,R2,#7
