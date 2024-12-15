@@ -1,0 +1,25 @@
+Experiment No: 4 Task#01
+
+MOV r0, #5        ; load 5 into r0
+MOV r1, #0        ; load 0 into r1
+loop
+ADD r1, r1, r0    ; add r0 to r1
+SUB r0, r0, #1    ; subtract 1 from r0
+CMP r0, #0        ; compare r0 to 0
+BNE loop           ; if r0 != 0, branch to loop
+MOV r0, r1        ; move r1 into r0 (output)
+
+Experiment No: 4 Task#02
+
+LOAD R1, A ; Load the first number
+LOAD R2, B ; Load the second number
+MOV R3, 0 ; Move (R3) to 0
+MOV R4, 0 ; Initialize counter (R4) to 0
+LOOP:
+CMP R4, R2 ; Compare counter (R4) with B (R2)
+BEQ DONE ; If counter equals B, branch to DONE
+ADD R3, R3, R1 ; Add A (R1) to result (R3)
+INC R4 ; Increment counter (R4)
+JMP LOOP ; Repeat the loop
+DONE:
+At this point, R3 contains the result of A * B
